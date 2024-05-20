@@ -1,0 +1,185 @@
+body{
+    background-color: black; 
+    overflow-x: hidden;
+    cursor: url(img/flippOff.png)10 10, auto;
+}
+
+.foot {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    /*background-color: black; /* Dark background */
+    color: black; /* White text */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 25px; /* Adjust the height as needed */
+    border-color: white;
+    border-left-color: black;
+    border-right-color: black;
+    border-width: .2vw;
+    border-style: solid;
+}
+.foot-inner {
+    width: 100%; /* Adjust inner container width */
+    height: 100%; /* Adjust inner container height */
+    position: absolute;
+    animation: loopAnimation 5s linear infinite;
+    margin: 1vw; /* Remove default margin */
+}
+.foot video{
+    width: 100%;
+    height: 100%;
+    border: none; /* Ensures no border */
+}
+.logo{
+    max-width: 50%;
+    height: auto;
+    filter: brightness(100%);
+    margin: 0;
+    padding: 0;
+}
+.logo:hover{
+    filter: brightness(200%);
+}
+#wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.content{
+    position: relative;
+    align-content: center;
+    z-index: 50;
+}
+.content2{
+    position: relative;
+    align-content: center;
+    z-index: 100;
+    width:100%;
+    pointer-events: none;
+}
+.background{
+    position: absolute;
+    top: 10vw;
+    width: 100%;
+    z-index: -100;
+}
+.background2{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    top: 0%;
+    left: 22vw;
+    overflow: hidden;
+}
+.row{
+    border-color: white;
+    border-width: 2vw;
+    margin-top: 3vw;
+    width: 100%;
+    max-height: fit-content;
+    min-height: fit-content;
+}
+input{
+    background-color: black;
+    border-radius: 2vw;
+    border-color: white;
+    height: 20vw;
+    width: 100%;
+    border-width: .5vw;
+}
+.rowSpacer{
+    margin-top: 5vw;
+    width: 100%;
+    height: 40vh;
+}
+.rowTitle{
+    margin: 0vw;
+    padding: 5vw;
+    width: 100%;
+    height: 20vh;
+}
+button{
+    width: 30vw;
+    height: 10vw;
+    border-color: white;
+    border-width: .3vw;
+    border-style: solid;
+    border-radius: 8vw;
+    background-color: white;
+    color:black !important;
+}
+
+.buttonBuy:hover{
+    background-color: transparent;
+    color:white !important;
+    cursor: url(img/flippOff.png)10 10, auto;
+}
+.bigButton{
+    width: 18vw;
+    height: 5vw;
+    border-width: .5vw;
+    border-radius: 6vw;
+    background-color: transparent;
+    color:white !important;
+    pointer-events:auto;
+}
+.bigButton:hover{
+    background-color: white;
+    color:black !important;
+    cursor: url(img/FlipOffBlack.png)10 10, auto;
+}
+.createButton{
+    background-color: transparent;
+    color:white !important;
+}
+.createButton:hover{
+    background-color: white;
+    color:black !important;
+    cursor: url(img/FlipOffBlack.png)10 10, auto;
+}
+
+path {
+    fill: transparent;
+}
+
+svg{
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+
+}
+  
+text {
+    fill: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3vw;
+    text-align: center;
+    width: 100%;
+    text-shadow: 4px 4px black;
+}
+
+h3{
+    color: white;
+    font-family: "futuracondensed_extra_bold", Arial;
+    font-size: 4vw;
+    text-align: center;
+    width: 100%;
+    transform: skewY(-10deg);
+    font-weight: 1000;
+}
+
+p{
+    color:white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+@keyframes loopAnimation {
+    0% {
+        left: -850px; /* Start position */
+    }
+    100% {
+        left: calc(100% + 100px); /* End position */
+    }
+}

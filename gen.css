@@ -1,0 +1,15 @@
+html, body {
+    margin-left: 10vw;
+    margin-top: 3vw;
+    padding: 0;
+    color: white;
+    background-color: black;
+    font-size: .8vw;
+    font-family: 'Courier';
+    line-height: 1vw;
+  }
+  
+  canvas {
+    display: block;
+  }
+  
